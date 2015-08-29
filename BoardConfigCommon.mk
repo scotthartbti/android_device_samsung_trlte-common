@@ -102,6 +102,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno420
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
 TARGET_USES_QCOM_BSP := true
 
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+
 #TWRP specific build flags
 DEVICE_RESOLUTION := 1440x2560
 TW_BRIGHTNESS_PATH := "/sys/devices/fd900000.qcom\x2cmdss_mdp/qcom\x2cmdss_fb_primary.163/leds/lcd-backlight/brightness"
