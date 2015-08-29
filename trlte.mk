@@ -86,6 +86,9 @@ PRODUCT_PACKAGES += \
     mixer_paths.xml \
     tinymix
 
+# Add twrp recovery specifically for mounting f2fs converted partitions
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/twrp.fstab:recovery/root/etc/twrp.fstab
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(LOCAL_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
